@@ -2,6 +2,29 @@
 
 Scripts to interact with the Android OS on the IFC6410, and an alternative interface to the *ThermalProfiler* app.
 
+These scripts use the [Android Debug Bridge (*adb*)](http://developer.android.com/tools/help/adb.html) to execute shell 
+commands on the IFC6410. *adb* is included in the [Android SDK tools](http://developer.android.com/sdk/index.html).
+
+Useful *adb* commands:
+
+**Start a remote shell**
+
+```
+$ adb shell
+```
+
+**Download *ThermalProfiler* data to your computer**
+
+*ThermalProfiler* data is always saved to `/sdcard/Download/stat.csv` on the IFC6410 filesystem (existing data is 
+overwritten after every recording session).
+
+```
+$ adb pull /sdcard/Download/stat.csv [local]
+
+  optional:
+  [local]        location and/or filename to save on your computer
+```
+
 ----------------------------------------
 
 ## android_setup.sh
