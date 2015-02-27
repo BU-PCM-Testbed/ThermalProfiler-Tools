@@ -7,7 +7,6 @@
 % policy_301
 % policy_302
 clc
-DATA_REDUCTION_SETUP;
 
 % set directory with test data
 % test_name = 'policy_300';
@@ -30,7 +29,7 @@ disp('temperatures are averaged across benchmark running time');
 fprintf('\n\n');
 
 % set directory with test data
-run_directory = sprintf('%s%s', DR_TESTBED_LOG_DIR, test_name);
+run_directory = sprintf('%s%s', TESTBED_LOG_DIR, test_name);
 cd(run_directory);
 
 % MATLAB data file containing data for this script

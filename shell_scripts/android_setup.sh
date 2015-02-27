@@ -1,6 +1,13 @@
 #!/bin/bash
 #
-# script to set up android for tests
+# Run this script once every time you boot the IFC6410. This script will:
+#
+# * Disable *mpdecision*
+# * Disable *thermald*
+# * Activate all 4 cores
+# * Set CPU core governors to *userspace*
+# * Enable all thermal sensors
+# * Set system time to current time
 #
 #
 

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Print all readings from thermal sensors. CPU core temperatures denoted by zone 7, 8, 9, and 10.
 #
 # arguments
 # $1           enable: first enables the thermal zone sensors

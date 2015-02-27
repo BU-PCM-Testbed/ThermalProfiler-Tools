@@ -2,12 +2,15 @@
 #
 # script to set up CPU frequency
 #
+# arguments:
+# $1    frequency in MHz
 #
 
 if [ -z "$1" ]; then
   echo "usage: `basename $0` <speed (in MHz)>"
-  echo " "
-  echo "       speed = 384|486|594|702|810|918|1026|1134|1242"
+  echo ""
+  echo "  arguments:"
+  echo "  <frequency>     specify 384, 486, 594, 702, 810, 918, 1026, 1134, or 1242"
   exit
 fi
 

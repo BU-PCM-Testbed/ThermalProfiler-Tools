@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# android_thermal_profiler.sh start|home|record|benchmark|debug|(threads 1|2|3|4)
+#
+# arguments:
+# start           starts the app
+# home            goes to the Android home screen
+# record          presses the Record button
+# benchmark       presses the Benchmark button
+# debug           presses the Debug button
+# threads         specify 1, 2, 3, or 4. defines number of benchmark threads to execute
+
 if [ "$1" == "start" ]; then
   adb shell am start -n com.testbed.thermalprofiler/.MainActivity
   
@@ -11,9 +21,6 @@ elif [ "$1" == "record" ]; then
   
 elif [ "$1" == "benchmark" ]; then
   adb shell input tap 1200 450
-  
-#elif [ "$1" == "utilization" ]; then
-#  adb shell input tap 478 126
   
 elif [ "$1" == "debug" ]; then
   adb shell input tap 310 700
@@ -39,5 +46,5 @@ elif [ "$1" == "threads" ]; then
   fi
   
 else
-  echo "usage: `basename $0` [start|home|record|benchmark|utilization|debug|[cores 1|2|3|4]]"
+  echo "usage: `basename $0` start|home|record|benchmark|debug|(threads 1|2|3|4)"
 fi

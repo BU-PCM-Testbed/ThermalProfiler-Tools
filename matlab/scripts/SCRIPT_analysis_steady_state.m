@@ -8,7 +8,6 @@
 % lu_202
 %
 clc
-DATA_REDUCTION_SETUP;
 
 % set directory with test data
 % test_name = 'sor_200';
@@ -17,7 +16,7 @@ test_name = 'lu_202';
 
 disp(['TEST DATA: ', test_name]);
 
-run_directory = sprintf('%s%s', DR_TESTBED_LOG_DIR, test_name);
+run_directory = sprintf('%s%s', TESTBED_LOG_DIR, test_name);
 cd(run_directory);
 
 % MATLAB data file containing data for this script

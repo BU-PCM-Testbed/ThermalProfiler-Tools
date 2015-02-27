@@ -1,16 +1,18 @@
 #!/bin/bash
 #
-# script to activate number of cores
+# Enable 1, 2, 3, or 4 CPU cores. Remaining CPU cores are disabled.
 #
+# arguments:
 # $1    number of cores [1-4]
 #
 
 NUM_CORES_ON=$1
 
 if [ -z "$NUM_CORES_ON" ] || [ "$NUM_CORES_ON" -lt "1" ] || [ "$NUM_CORES_ON" -gt "4" ]; then
-  echo "usage: `basename $0` <num cores>"
+  echo "usage: `basename $0` <cores>"
   echo ""
-  echo "       <num cores> = 1, 2, 3, or 4"
+  echo "  arguments:"
+  echo "  <cores>         any number between 1 and 4, inclusive"
   exit
 fi
 

@@ -1,10 +1,18 @@
 #/bin/bash
-# android_test_run_idle.sh
 #
 
+# arguments:
+# $1    starting index, e.g. if you specify 3, this script will start with the 3rd test (line 3) in the test list
+#
+
+#
+# SET THE DIRECTORY TO SAVE TESTBED DATA
+#
 RUN_LOG_DIR='C:\Users\Charlie\Dropbox\BU\Research\Testbed\agilent_capture\lu_202'
 echo $RUN_LOG_DIR
 
+#
+# Specify the test list to use
 TEST_LIST_FILE='test_list_steady_state.csv'
 NUM_TESTS=`wc -l $TEST_LIST_FILE | awk '{print $1;}'`
 

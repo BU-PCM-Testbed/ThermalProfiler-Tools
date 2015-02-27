@@ -1,7 +1,8 @@
 #/bin/bash
-# android_test_run_idle.sh
-#
 
+#
+# SET THE DIRECTORY TO SAVE TESTBED DATA
+#
 RUN_LOG_DIR='C:\Users\devivero\Dropbox\BU\Research\Testbed\agilent_capture\test_029'
 echo $RUN_LOG_DIR
 
