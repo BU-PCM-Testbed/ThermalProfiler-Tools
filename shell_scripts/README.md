@@ -90,6 +90,16 @@ $ android_thermal_profiler.sh start|home|record|benchmark|debug|(threads 1|2|3|4
   threads         specify 1, 2, 3, or 4. defines number of benchmark threads to execute
 ```
 
+## android_measure_usage.sh
+Measure CPU usage of the *ThermalProfiler* app.
+
+```
+$ android_measure_usage.sh [time]
+  
+  optional:
+  [time]          time interval (seconds) to sample CPU usage (defaults to 5 sec)
+```
+
 
 ## Scripts for executing test runs
 These scripts will execute a series of experiments. See comments inside script files to understand how they work.
