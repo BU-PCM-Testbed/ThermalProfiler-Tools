@@ -25,6 +25,15 @@ $ adb pull /sdcard/Download/stat.csv [local]
   [local]        location and/or filename to save on your computer
 ```
 
+**Shutdown IFC6410**
+
+Switch to root to shutdown the system.
+
+```
+$ su
+# reboot -p
+```
+
 ----------------------------------------
 
 ## android_setup.sh
