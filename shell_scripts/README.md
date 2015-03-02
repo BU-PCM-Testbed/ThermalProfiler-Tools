@@ -88,7 +88,7 @@ $ android_print_temperatures.sh [enable]
 Alternative user interface for the *ThermalProfiler* app.
 
 ```
-$ android_thermal_profiler.sh start|home|record|benchmark|debug|(threads 1|2|3|4)
+$ android_thermal_profiler.sh start|home|record|benchmark|debug|ambientplus|ambientminus|(ambient <temp>)|(threads <num>)
   
   arguments:
   start           starts the app
@@ -96,7 +96,10 @@ $ android_thermal_profiler.sh start|home|record|benchmark|debug|(threads 1|2|3|4
   record          presses the Record button
   benchmark       presses the Benchmark button
   debug           presses the Debug button
-  threads         specify 1, 2, 3, or 4. defines number of benchmark threads to execute
+  ambientplus     presses the Ambient Temperature (+) button
+  ambientminus    presses the Ambient Temperature (-) button
+  ambient <temp>  specify <temp> as a floating point number. defines Ambient Temperature, in Celsius
+  threads <num>   specify <num> as 1, 2, 3, or 4. defines number of benchmark threads to execute
 ```
 
 ## android_measure_usage.sh
