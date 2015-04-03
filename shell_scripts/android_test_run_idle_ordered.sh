@@ -81,14 +81,14 @@ for IDX in `seq $START_IDX $NUM_TESTS`; do
   
   # wait for temperatures to settle
   echo "Waiting ..."
-  sleep 120
+  sleep 180
   
   # start recording
   echo "Start recording ... "
   ./android_thermal_profiler.sh record
 
   # nominal test run is 2 minutes
-  sleep 120
+  sleep 60
   
   # stop recording
   echo "Stop recording ..."
